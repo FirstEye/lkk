@@ -1,5 +1,5 @@
 #include<iostream>
-#include"��ͷ.h"
+#include"±êÍ·.h"
 using namespace std;
 
 ArrayMaxSum::ArrayMaxSum()
@@ -37,7 +37,7 @@ int ArrayMaxSum::getArrayMaxSum()
 {
 	if (array_ == NULL)return 0;
 	int tempsum = array_[0];
-	int maxsum = 0;
+	int maxsum = tempsum>0?tempsum:0;
 	for (int i = 1; i < number; i++)
 	{
 		tempsum = tempsum + array_[i] > array_[i] ? tempsum + array_[i] : array_[i];
